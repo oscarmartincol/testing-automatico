@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: SearchTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.116 s <<< FAILURE! -- in SearchTest
+SearchTest.BusquedaExitosa_Uruguay -- Time elapsed: 0.578 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Duration cannot be resolved
+	SearchPage cannot be resolved to a type
+	SearchPage cannot be resolved to a type
+
+	at SearchTest.preconditions(SearchTest.java:19)
+	Suppressed: java.lang.Error: Unresolved compilation problems: 
+	SearchPage cannot be resolved to a type
+	SearchPage cannot be resolved to a type
+
+		at SearchTest.close(SearchTest.java:46)
+

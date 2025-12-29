@@ -8,8 +8,28 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TestGoogle {
     public WebDriver driver;
 
-
     @Test
+    public void test_1() {
+        driver = new ChromeDriver();
+        driver.get("https://google.com");
+
+        driver.getTitle(); // "Google"
+
+        WebElement searchBox = driver.findElement(By.name("q"));
+        WebElement searchButtom = driver.findElement(By.name("btnK"));
+
+        searchBox.sendKeys("Selenium");
+        searchBox.sendKeys(Keys.ENTER);
+        //searchButtom.click();
+
+        searchBox = driver.findElement(By.name("q"));
+        searchBox.getAttribute("value"); //"Selenium"
+
+        driver.quit();
+    }
+
+
+  /* @Test
     public void test_1() {
         driver = new ChromeDriver(); // open browser
         driver.get("https://google.com");   // navigate to google.com
@@ -27,5 +47,5 @@ public class TestGoogle {
         searchBox.getAttribute("value"); //"Selenium"  // get text from search box
 
         driver.quit(); // close browser
-    }
+    }*/
 }

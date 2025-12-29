@@ -25,3 +25,9 @@ Los conceptos de Java en cuanto a variables, metodos, clases, superclases, polim
 4. Agregar la propertie de Junit Jupiter utilizada en el POM. Esto como buena practica.
 5. Crear clase Java con el test deseado.
 
+# Anotaciones principales de las pruebas
+
+- @Before: Se ejecuta antes de todo segun la donde sea utilizada.
+- @After: Se ejecuta despúes de todo segun el caso.
+- @Test: Utilizado para identificar el caso de prueba real. Necesario debido a que se pueden agrupar varias pruebas en ubna clase con Junit.
+- @Tag: Sirve para agrupar distintos test en una misma suite.
